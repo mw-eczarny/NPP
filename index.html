@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>NPP Style Guide</title>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/styleguide/styleguide.css"/>
+</head>
+<body class="sg">
+    <header class="sg__header">
+        <div class="sg__container">
+            <h1><a href=""><img src="images/nfflogo.svg" alt="Norges Fotballforbund logo" class="sg__logo"> <span>Norges Fotballforbund</span></a></h1>
+        </div>
+
+        <nav class="sg__nav">
+            <div class="sg__container">
+                <ul class="sg__menu">
+                    <li><a href="">Intro</a></li>
+                    <li><a href="">Something</a></li>
+                    <!--<li><a href="">Molecules</a></li>
+                    <li><a href="">Organisms</a></li>
+                    <li><a href="">Templates</a></li>-->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="sg__body sg__container">
+        <h1 class="sg__title">Global styles</h1>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Colors</h2>
+            </div>
+            <div class="sg-unit__body">
+                <ul class="sg-unit__colors">
+                    <li class="brand-color">
+                        #fff<br>
+                        $brand-color
+                    </li>
+                </ul>
+                <ul class="sg-unit__colors">
+                    <li class="dark-gray-color">
+                        #222<br>
+                        $dark-gray
+                    </li>
+                    <li class="medium-gray-color">
+                        #222<br>
+                        $medium-gray
+                    </li>
+                    <li class="light-gray-color">
+                        #222<br>
+                        $light-gray
+                    </li>
+                </ul>
+                <ul class="sg-unit__colors">
+                    <li class="accent-blue-color">
+                        #blue<br>
+                        $accent-blue-color
+                    </li>
+                    <li class="accent-red-color">
+                        #red<br>
+                        $accent-red-color
+                    </li>
+                    <li class="accent-orange-color">
+                        #orange<br>
+                        $accent-orange-color
+                    </li>
+                    <li class="accent-purple-color">
+                        #purple<br>
+                        $accent-purple-color
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Grid</h2>
+            </div>
+            <div class="sg-unit__body">
+                TODO GRID EXAMPLE
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Mixins</h2>
+            </div>
+            <div class="sg-unit__body">
+                TODO MIXINS EXAMPLE
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Fonts</h2>
+            </div>
+            <div class="sg-unit__body">
+                Primary font - $ff-FONT-NAME<br>
+                Secondary font - $ff-FONT-NAME2
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Headings</h2>
+            </div>
+            <div class="sg-unit__body">
+                <h1>h1 - .hero-heading</h1>
+                <h2>h2 - .x-large-heading</h2>
+                <h3>h3 - .large-heading</h3>
+                <h4>h4 - .medium-heading</h4>
+                <h5>h5 - .small-heading</h5>
+                <h6>h6 - .x-small-heading</h6>
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Inline elements (rich text area from CMS)</h2> <!-- what about headings inside rich text area? the same as headings for blocks?? -->
+            </div>
+            <div class="sg-unit__body">
+                <div class="rich-text">
+                    <p><a href="#">This is a text link</a></p>
+                    <p><strong>Strong is used to indicate strong importance</strong></p>
+                    <p><em>This text has added emphasis</em></p>
+                    <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+                    <p>The <i>i element</i> is text that is set off from the normal text</p>
+                    <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+                    <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+                    <p><s>This text has a strikethrough</s></p>
+                    <p>Superscript<sup>®</sup></p>
+                    <p>Subscript for things like H<sub>2</sub>O</p>
+                    <p><small>This small text is small for for fine print, etc.</small></p>
+                    <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                    <p>Keybord input: <kbd>Cmd</kbd></p>
+                    <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+                    <p><cite>This is a citation</cite></p>
+                    <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+                    <p>The <mark>mark element</mark> indicates a highlight</p>
+                    <p><code>This is what inline code looks like.</code></p>
+                    <p><samp>This is sample output from a computer program</samp></p>
+                    <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var></p>
+
+                    <ul>
+                        <li>This is a list item in an unordered list</li>
+                        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+                        <li>
+                            Lists can be nested inside of each other
+                            <ul>
+                                <li>This is a nested list item</li>
+                                <li>This is another nested list item in an unordered list</li>
+                            </ul>
+                        </li>
+                        <li>This is the last list item</li>
+                    </ul>
+
+                    <ol>
+                        <li>This is a list item in an ordered list</li>
+                        <li>An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.</li>
+                        <li>
+                            Lists can be nested inside of each other
+                            <ol>
+                                <li>This is a nested list item</li>
+                                <li>This is another nested list item in an ordered list</li>
+                            </ol>
+                        </li>
+                        <li>This is the last list item</li>
+                    </ol>
+
+                    <!-- add tables, definition list?? -->
+                </div>
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Form Elements</h2>
+            </div>
+            <div class="sg-unit__body">
+                <form class="base-form">
+                    <fieldset>
+                        <label for="text">Text Input</label>
+                        <input id="text" type="text" placeholder="Text Input">
+                        <br>
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Type your Password">
+                        <br>
+                        <label for="textarea">Textarea</label>
+                        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                        <br>
+                        <label class="error">Error Input</label>
+                        <input class="is-error" type="text" placeholder="Text Input">
+                        <br>
+                        <label class="valid">Valid</label>
+                        <input class="is-valid" type="text" placeholder="Text Input">
+                        <br>
+                        <label for="webaddress">Web Address (html5 element)</label>
+                        <input id="webaddress" type="url" placeholder="http://yoursite.com">
+                        <br>
+                        <label for="emailaddress">Email Address (html5 element)</label>
+                        <input id="emailaddress" type="email" placeholder="name@email.com">
+                        <br>
+                        <label for="search">Search (html5 element)</label>
+                        <input id="search" type="search" placeholder="Enter Search Term">
+                        <br>
+                        <label for="textn">Number Input (html5 element)</label>
+                        <input id="textn" type="number" placeholder="Enter a Number">
+                        <br>
+                        <label for="select">Select</label>
+                        <select id="select">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">Text</option>
+                        </select>
+
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Buttons</h2>
+            </div>
+            <div class="sg-unit__body">
+                <a class="btn btn-default" href="#" role="button">Link</a>
+                <button class="btn btn-default" type="submit">Button</button>
+                <input class="btn btn-default" type="button" value="Input">
+                <input class="btn btn-default" type="submit" value="Submit">
+            </div>
+        </section>
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Helpers</h2>
+            </div>
+            <div class="sg-unit__body">
+                .show - <br>
+                .hidden -<br>
+                .invisible -<br>
+                .visuallyhidden -<br>
+                .no-border -<br>
+                .no-margin -<br>
+                .hidden--mobile -<br>
+                .hidden--tablet -<br>
+                .hidden--tablet-and-up -<br>
+                .hidden--portable -<br>
+                .hidden--desktop -
+            </div>
+        </section>
+
+
+        <section class="sg-unit">
+            <div class="sg-unit__header">
+                <h2>Tables</h2>
+            </div>
+            <div class="sg-unit__body">
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Ina</td>
+                        <td>Doe</td>
+                    </tr>
+                </table>
+
+                <table class="table table--bordered">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Ina</td>
+                        <td>Doe</td>
+                    </tr>
+                </table>
+                <table class="table table--striped">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                    </tr>
+                    <tr>
+                        <td>1.</td>
+                        <td>Ina</td>
+                        <td>Doe</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="sg__footer">
+        <div class="sg__container">
+
+        </div>
+    </footer>
+</body>
+</html>
