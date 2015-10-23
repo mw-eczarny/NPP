@@ -1,14 +1,18 @@
 //Colors
-$brand-color: #000;
+$brand-color: #00205B;
 
 $dark-gray-color: #333;
-$medium-gray-color: #888;
-$light-gray-color: #ccc;
+$medium-gray-color: #ddd;
+$light-gray-color: #f8f8f8;
 
 $accent-blue-color: blue;
 $accent-red-color: red;
 $accent-purple-color: purple;
 $accent-orange-color: orange;
+
+//Colors in action
+$border-color: $medium-gray-color;
+$link-color: $brand-color;
 
 //TODO verify if needed
 //$error-color: #d04335;
@@ -24,5 +28,5 @@ $gutter: 50px;
 $tablet-gutter: 30px;
 
 //Fonts
-$ff-NAME: Arial, sans-serif;
-$base-font: normal 16px/1.4 $ff-NAME;
+$ff-gotham: "Gotham", "Arial", sans-serif;
+$base-font: normal 16px/1.4 $ff-gotham;
